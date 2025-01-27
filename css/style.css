@@ -1,0 +1,149 @@
+/* reset */
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,p,ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    color: #222;
+}
+.button{
+    margin-right: 1rem;
+ }
+
+/* theme */
+
+:root{
+    --color-default: #292F33;
+    --color-primary: #55ACEE;
+    --color-secondary: #66757F;
+    --color-warning: #d63031;
+    --color-success: #00b894;
+}
+.warning, .success{
+    max-width: 40rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+.warning{
+    background-color: var(--color-warning);
+    color: #fff;
+}
+.success{
+    background-color: var(--color-success);
+    color: #222;
+}
+header{
+    background-color: var(--color-default);
+}
+header h1{
+    line-height: 6.5rem;
+    text-align: center;
+    color: #fafafa;
+    font-size: 4rem;
+}
+header h1::before{
+    content: url(../asset/code.svg);
+    filter: invert(100%);
+    vertical-align: .2rem;
+    margin-right: .3rem;
+}
+
+nav ul{
+    list-style: none;
+    padding: 1rem 0;
+}
+nav ul li{
+    text-align: center;
+}
+article{
+    margin-bottom: 1rem;
+}
+article h2::before{
+    content: url(../asset/calendar.svg);
+    filter: invert(100%);
+    vertical-align: middle;
+    margin-right: .3rem;
+}
+main{
+    max-width: 80rem;
+    padding: 1rem;
+    margin:0 auto;
+}
+main h2{
+    font-size: x-large;
+}
+main .edit-pencil::before, .form legend::before{
+    content: url(../asset/edit-2.svg);
+    vertical-align: middle;
+    filter: invert(100%);
+    margin-right: .4rem;
+}
+main p, main h2{
+    color: #fff;
+}
+
+article h2{
+    font-size: large;
+    background-color: var(--color-primary);
+    line-height: 3.5rem;
+    color: #fff;
+    padding: .5rem;
+    margin: inherit;
+}
+article h2 a{
+    color: inherit;
+}
+article p{
+    color: #fff;
+    background-color: var(--color-secondary);
+    padding: .5rem;
+    margin: inherit;
+   /*  user-select: none; */ /* pas d'édition du texte*/
+}
+article time{
+    color: #fff;
+}
+
+/* formulaire */
+.form fieldset legend{
+    font-size: x-large;
+    padding-bottom: 1rem;
+    font-weight: 200;
+    
+}
+.form *, .form input[type="text"],.form input[type="search"]{
+    color: #fff;
+    border: none;
+    line-height: 3.5rem;
+    
+}
+.form textarea, .form input[type="text"]{
+    height: 20vh;
+    resize: none;
+    background-color: var(--color-default);
+    
+}
+.form input[type="search"]{
+    background-color: var(--color-default);
+}
+.form input[type="text"]{
+    height: inherit;
+}
+footer *{
+    text-align: center;
+    color: #fff;
+}
